@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles/regstyle.css" type="text/css" />
+        <title>Регистрация</title>
+        <link rel="icon" href="imgico/favicon.ico" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <form class="reg_form">
+            <div class="for_kb_div">
+                <p class="knowledge_base_insc">База знаний</p>
+            </div>
+            <p class="reg_insc">Регистрация</p>
+            <input class="name_input" id="name_input_id" placeholder="Введите ваше имя" type="text" pattern="^[-а-яА-ЯёЁ]+$" minlength="2" maxlength="50" required />
+            <input class="surname_input" id="surname_input_id" placeholder="Введите вашу фамилию" type="text" pattern="^[-а-яА-ЯёЁ]+$" minlength="2" maxlength="50" required />
+            <input class="patronymic_input" id="patronymic_input_id" placeholder="Введите ваше отчество" type="text" pattern="^[а-яА-ЯёЁ]+$" minlength="2" maxlength="50" required />
+            <input class="group_selection" placeholder="Выберите вашу группу" list="groups" />
+            <datalist id="groups">
+                <option>20-ПКС-11</option>
+                <option>19-ПКС-1-9</option>
+                <option>19-ПКС-2-9</option>
+                <option>19-ПКС-3-9</option>
+            </datalist>
+            <input class="password_input" id="password_input_id" placeholder="Установите пароль" type="text" pattern="^[a-zA-Z0-9!@#\$%\?&\*]+$" minlength="5" maxlength="15" required />
+            <button class="reg_button" name="submit" type="submit">Зарегистрироваться</button>
+        </form>
+        <div class="for_circles_div">
+            <div class="left_circle_div"></div>
+            <div class="right_circle_div"></div>
+        </div>
+        <script src="scripts/regscript.js" type="text/javascript" defer></script>
+    </body>
+</html>
